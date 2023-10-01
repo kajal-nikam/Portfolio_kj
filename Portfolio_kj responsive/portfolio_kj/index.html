@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav >
+          <img src="images/images.jpg" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class='bx bx-window-close' onclick="closemenu()"></i>
+          </ul>
+          <i class='bx bx-menu'onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend developer</p>
+          <h1>
+            Hi, I'm <span>Kajal</span> Nikam <br />
+            From Green City [<span> Nashik</span> ]
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about 1.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Highly accomplished and user-focused Front-end Developer adept in
+              collaborating with UX and design teams to plan the technical
+              writing and execution of functional specifications for websites
+              and applications. Experienced in building multi-platform websites
+              using Responsive Web Design/RWD.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('work design')">
+                Work Design
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML5 & CSS3</span> <br />I have completed my front end developer course in 4 months..and  I have a strong knowledge of html & css...   </li>
+                <li>
+                  <span>JAVASCRIPRT</span> <br />I made my personal portfolio using HTML5 , CSS3 and JAVASCRIPT...
+                 
+                </li>
+                <li>
+                  <span>BOOSTRAP</span><br /> I have the knowlege of BOOSTRAP as well..
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="work design">
+              <ul>
+                <li><span>2023</span> <br />Basic Tables using Table Element..</li>
+                <li><span>2023</span> <br />Basic Tables using 'colspan & rowspan'Table Element.</li>
+                <li><span>2023</span><br />various forms such as regitration forms, login forms..</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2018</span> <br />Bachelor of Engineering</li>
+                <li><span>2015</span> <br />Diploma in electronics and telecommunication</li>
+                <li><span>2012</span><br />10th</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Targets</h1>
+        <div class="services-list">
+          <div>
+            <i class="bx bx-code-alt"></i>
+            <h2>Web Design</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic
+              necessitatibus ut, sit quidem dolores delectus facilis dolorum sed
+              rem quam! Numquam explicabo quasi blanditiis dolor veritatis
+              doloremque. Odio, repellendus!
+            </p>
+            <h3><a href="#">Learn More</a></h3>
+          </div>
+          <div>
+            <i class="bx bx-building"></i>
+
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic
+              necessitatibus ut, sit quidem dolores delectus facilis dolorum sed
+              rem quam! Numquam explicabo quasi blanditiis dolor veritatis
+              doloremque. Odio, repellendus!
+            </p>
+            <h3><a href="#">Learn More</a></h3>
+          </div>
+          <div>
+            <i class="bx bxs-happy-alt"></i>
+            <h2>App Design</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic
+              necessitatibus ut, sit quidem dolores delectus facilis dolorum sed
+              rem quam! Numquam explicabo quasi blanditiis dolor veritatis
+              doloremque. Odio, repellendus!
+            </p>
+            <h3><a href="#">Learn More</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Temperature Counter</h3>
+                        <p>This is the thing we used in our day today's life..So I made it using HTML,CSS & JAVASCRIPRT... 
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Image Slider</h3>
+                        <p>I made this peoject using HTML,CSS & JAVASCRIPRT...!
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Word Counter</h3>
+                        <p>I made this peoject using HTML,CSS & JAVASCRIPRT...!
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class='bx bxs-send'></i>cdnexample@gmail.com</p>
+                  <p> <i class='bx bxs-phone'></i>09878676556</p>
+                  <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                  </div>
+                  <a href="" class="btn btn2">Download CV</a>
+                </div>
+                
+                 <div class="contact-right"></div>
+               <form >
+                <input type="text" name="Name" id=""placeholder="Your Name " required>
+                <input type="email" name="email" id=""placeholder="YourEmail " required>
+                <textarea name="message" rows="6"placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Kajal. Made with <i class='bx bxs-heart'></i>by Kajal Creation</p>
+                <div class="iconTop">
+                  <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+        var smd = document.getElementById("sidemenu");
+
+        function openmenu(){
+            smd.style.right = "0";
+        }
+        function closemenu(){
+            smd.style.right = "-200px";
+        }
+    </script>
+  </body>
+</html>
